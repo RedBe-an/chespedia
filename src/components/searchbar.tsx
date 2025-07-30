@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
@@ -12,7 +12,7 @@ const SearchBar = () => {
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       handleSearch(searchValue);
     }
   };
@@ -26,8 +26,8 @@ const SearchBar = () => {
         onKeyPress={handleKeyPress}
         className="pr-10"
       />
-      <Search 
-        className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground cursor-pointer" 
+      <Search
+        className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground cursor-pointer"
         onClick={() => handleSearch(searchValue)}
       />
     </div>
